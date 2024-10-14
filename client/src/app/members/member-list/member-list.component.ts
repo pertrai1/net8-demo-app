@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 
-import { PaginationModule} from 'ngx-bootstrap/pagination';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 import { MembersService } from '../../_services/members.service';
 
@@ -12,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-member-list',
   standalone: true,
-  imports: [MemberCarComponent, PaginationModule, FormsModule],
+  imports: [MemberCarComponent, PaginationModule, FormsModule, ButtonsModule],
   templateUrl: './member-list.component.html',
   styleUrl: './member-list.component.css'
 })
